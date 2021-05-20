@@ -1,0 +1,78 @@
+// font-info
+$font-family: 'SF UI Text', sans-serif;
+$font-family2: 'SF Pro Text', sans-serif;
+$font-family3: 'Circular Std';
+$font-size-base: 1rem; //24px
+$font-weight-base: 400;
+$line-height-base: 29px;
+
+// colors
+$white: #ffffff;
+$black: #000000;
+$light: #F4F4F4;
+$lightest: #F6F6F8;
+$off-white: #F5F6F7;
+
+// theme colors
+$primary: #016F34;
+
+$gray-dark: #111111;
+$light-gray: #EBEBEB;
+
+
+// body
+$body-bg: $white;
+$body-color: rgba($gray-dark,.5);
+$body-font-size: $font-size-base; //24px
+$body-line-height: $line-height-base; //29px
+
+//heading 
+$heading-color: $gray-dark;
+$heading1-size: 2.708333rem; //65px
+$heading2-size: 1.75rem; //42px
+$heading3-size: 1.33333rem; //32px
+$heading4-size: 1.16666rem; //28px
+$heading5-size: 1.083333rem; //26px
+$heading6-size: 1rem; //24px
+
+$heading1-line-height: 3.25rem; //78px
+$heading2-line-height: 2.08333rem; //50px
+$heading3-line-height: 1.58333rem; //38px
+$heading4-line-height: 1.375rem; //33px
+$heading5-line-height: 1.29166rem; //31px
+$heading6-line-height: 1.20833rem; //29px
+
+
+//button
+$btn-font-size: .833333rem; //20px
+$btn-line-height: 1rem; //24px
+$btn-font-weight: 900;
+$btn-shadow: 0 0 0 .133rem rgba($primary, .5);
+$disable-btn-bg-color: rgba($primary, .5);
+
+//tag
+$tag-primary-bg: rgba(#587555,.17);
+$tag-primary-color: #587555;
+$tag-primary-border-color: rgba(#577654,.025);
+
+$tag-warning-bg: rgba(#F5A623,.17);
+$tag-warning-color: #F5A623;
+$tag-warning-border-color: rgba(#F7A700,.025);
+
+$tag-light-blue-bg: rgba(#536DFE,.17);
+$tag-light-blue-color: #536DFE;
+$tag-light-blue-border-color: rgba(#536DFE,.025);
+
+//notification
+$notification-primary-bg: #CDE3D7;
+$notification-color: $primary;
+$notification-border-color: $notification-color;
+
+$border-light-color: #F2F2F2;
+// container-width
+$container-width: 48rem !default; //768px
+
+//breakpoints
+$md-device: 769px;
+$mobile-size: 576px;
+$mobile-xs-size: 375px;

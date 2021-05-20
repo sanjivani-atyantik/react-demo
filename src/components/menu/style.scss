@@ -1,0 +1,9 @@
+@import "../../resources/css/scss/variable";
+@import "../../resources/css/scss/mixins";
+.no-wrap {
+	max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    @include scrollbars(.35rem,.5rem,$primary, $light);
+    padding-bottom: 1rem;
+}

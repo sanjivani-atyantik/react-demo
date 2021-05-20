@@ -1,0 +1,44 @@
+@import "../../resources/css/scss/variable";
+@import "../../resources/css/scss/mixins";
+$header-height: 5rem;
+$min-height: 9.29rem;
+
+.site-header {
+	min-height: $header-height;
+	background-color: $white;
+	border-bottom: 1px solid $light;
+	@include transition(.2s all linear);
+}
+.min-height {
+  min-height: $min-height;
+}
+.top-header {
+	@include flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: $header-height; 
+}
+.logo {
+	width: 3.333rem;
+}
+.fixed-header {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top:0;
+	min-height: $header-height;
+	z-index: 11;
+	background-color: $white;
+	border-bottom: 1px solid $light;
+	@include transition(.2s all linear);
+}
+//header effect
+.header-effect {
+	margin-top: -$header-height;
+	.fixed-header {
+		margin-top: -$header-height;
+	} 
+}
+.header-shadow {
+	@include shadow(0px 2px 10px rgba(216, 216, 216, 0.5), 0px -2px 10px rgba(216, 216, 216, .5));
+}

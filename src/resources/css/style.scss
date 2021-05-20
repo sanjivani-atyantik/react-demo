@@ -1,0 +1,85 @@
+@import 'scss/variable';
+@import 'scss/mixins';
+@import 'scss/reboot';
+@import 'scss/layout';
+@import 'scss/typography';
+@import 'scss/custom';
+
+@font-face {
+  font-family: 'SF UI Text';
+  src: url('../fonts/SFUIText-Regular/SFUIText-Regular.eot') format('embedded-opentype');
+  src: url('../fonts/SFUIText-Regular/SFUIText-Regular.eot?#iefix') format('embedded-opentype'),
+	   url('../fonts/SFUIText-Regular/SFUIText-Regular.svg') format('svg'),
+	   url('../fonts/SFUIText-Regular/SFUIText-Regular.woff') format('font-woff'),
+	   url('../fonts/SFUIText-Regular/SFUIText-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF UI Text';
+  src: url('../fonts/SFUIText-Bold/SFUIText-Bold.eot') format('embedded-opentype');
+  src: url('../fonts/SFUIText-Bold/SFUIText-Bold.eot?#iefix') format('embedded-opentype'),
+	   url('../fonts/SFUIText-Bold/SFUIText-Bold.svg') format('svg'),
+	   url('../fonts/SFUIText-Bold/SFUIText-Bold.woff') format('font-woff'),
+	   url('../fonts/SFUIText-Bold/SFUIText-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SF UI Text';
+  src: url('../fonts/SFUIText-Heavy/SFUIText-Heavy.eot') format('embedded-opentype');
+  src: url('../fonts/SFUIText-Heavy/SFUIText-Heavy.eot?#iefix') format('embedded-opentype'),
+	   url('../fonts/SFUIText-Heavy/SFUIText-Heavy.svg') format('svg'),
+	   url('../fonts/SFUIText-Heavy/SFUIText-Heavy.woff') format('font-woff'),
+	   url('../fonts/SFUIText-Heavy/SFUIText-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SF UI Text';
+  src: url('../fonts/SFUIText-ItalicG2/SFUIText-ItalicG2.eot') format('embedded-opentype');
+  src: url('../fonts/SFUIText-ItalicG2/SFUIText-ItalicG2.eot?#iefix') format('embedded-opentype'),
+     url('../fonts/SFUIText-ItalicG2/SFUIText-ItalicG2.svg') format('svg'),
+     url('../fonts/SFUIText-ItalicG2/SFUIText-ItalicG2.woff') format('font-woff'),
+     url('../fonts/SFUIText-ItalicG2/SFUIText-ItalicG2.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('../fonts/SFProText-Regular/SFProText-Regular.eot') format('embedded-opentype');
+  src: url('../fonts/SFProText-Regular/SFProText-Regular.eot?#iefix') format('embedded-opentype'),
+	   url('../fonts/SFProText-Regular/SFProText-Regular.svg') format('svg'),
+	   url('../fonts/SFProText-Regular/SFProText-Regular.woff') format('font-woff'),
+	   url('../fonts/SFProText-Regular/SFProText-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('../fonts/SFProText-Medium/SFProText-Medium.eot') format('embedded-opentype');
+  src: url('../fonts/SFProText-Medium/SFProText-Medium.eot?#iefix') format('embedded-opentype'),
+     url('../fonts/SFProText-Medium/SFProText-Medium.svg') format('svg'),
+     url('../fonts/SFProText-Medium/SFProText-Medium.woff') format('font-woff'),
+     url('../fonts/SFProText-Medium/SFProText-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Circular Std';
+  src: url('../fonts/CircularStd-Medium/CircularStd-Medium.eot') format('embedded-opentype');
+  src: url('../fonts/CircularStd-Medium/CircularStd-Medium.eot?#iefix') format('embedded-opentype'),
+     url('../fonts/CircularStd-Medium/CircularStd-Medium.svg') format('svg'),
+     url('../fonts/CircularStd-Medium/CircularStd-Medium.woff') format('font-woff'),
+     url('../fonts/CircularStd-Medium/CircularStd-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

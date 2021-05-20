@@ -1,0 +1,24 @@
+@import "../../resources/css/scss/variable";
+@import "../../resources/css/scss/mixins";
+.search-container {
+	padding: 1.66rem 0;
+	min-height: calc(100vh - 5rem);
+	background-color: $light;
+}
+.search-block{
+	background-color: $white;
+	padding: .5rem;
+	margin-bottom: 1.5rem;
+}
+.search-text {
+	font-family: $font-family2;
+	font-weight: 500;
+}
+.row {
+	padding: 1.5rem .5rem;
+	border-bottom: 1px solid $light;
+	display: block;
+	&:last-child {
+		border-bottom: 0;
+	}
+}

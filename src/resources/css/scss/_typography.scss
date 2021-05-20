@@ -1,0 +1,58 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1 .h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: $font-family;
+  font-weight: bold;
+  margin-bottom: .5rem;
+  color: $heading-color;
+}
+
+.h1,
+h1 {
+  font-size: $heading1-size;
+  line-height: $heading1-line-height;
+}
+
+.h2,
+h2 {
+  font-size: $heading2-size;
+  line-height: $heading2-line-height;
+}
+
+.h3,
+h3 {
+  font-size: $heading3-size;
+  line-height: $heading3-line-height;
+}
+
+.h4,
+h4 {
+  font-size: $heading4-size;
+  line-height: $heading4-line-height;
+  letter-spacing: .029rem;
+}
+
+.h5,
+h5 {
+  font-size: $heading5-size;
+  line-height: $heading5-line-height;
+}
+
+.h6,
+h6,
+.p,
+p {
+  font-size: $heading6-size;
+  line-height: $heading6-line-height;
+}
+.p,p {
+  color: $body-color;
+}

@@ -1,0 +1,64 @@
+@import "../../resources/css/scss/variable";
+@import "../../resources/css/scss/mixins";
+
+.tag {
+	border-radius: 0.4166rem;
+	padding: .25rem .5rem;
+	background-color: $tag-primary-bg;
+	color: $tag-primary-color;
+	border: 0.08rem solid $tag-primary-border-color;
+	font-size: .9166rem;
+	line-height: 1.0833rem;
+	letter-spacing: .022rem;
+	width: 100%;
+	text-align: center;
+	min-width: 9.1428rem;
+	button {
+		width: 1.14rem;
+		height: 1.14rem;
+		margin-left: .5rem;
+	}
+	img {
+		max-width: .7rem;
+	}
+}
+.tag-warning {
+	background-color: $tag-warning-bg;
+	border-color: $tag-warning-border-color;
+	color: $tag-warning-color;
+}
+.tag-light-blue {
+	background-color: $tag-light-blue-bg;
+	border-color: $tag-light-blue-border-color;
+	color: $tag-light-blue-color;
+}
+.tag-light {
+	background-color: $lightest;
+	color: $body-color;
+}
+.d-none {
+	display: none;
+}
+.tag-outline-primary {
+	background-color: transparent;
+	color: $primary;
+	border: 0.08rem solid rgba($primary,.4);
+	min-width: inherit;
+	width: auto;
+	display: inline-flex;
+	font-size: 1rem;
+	line-height: 1.2083rem;
+	letter-spacing: .025rem;
+	height: 2.66rem;
+	align-items: center;
+	margin: .2rem;
+}
+.small-tag {
+	min-width: inherit;
+	text-transform: uppercase;
+	font-size: .95rem;
+	line-height: 1.125rem;
+	letter-spacing: .08rem;
+	font-family: $font-family2;
+	font-weight: 500;
+}

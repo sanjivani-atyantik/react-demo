@@ -1,0 +1,263 @@
+@import "./functions";
+
+@mixin shadow($shadow...) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+@mixin transition($transition...) {
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  -webkit-transition: $transition;
+  transition: $transition;
+}
+
+@mixin transform($transforms) {
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}
+
+
+@mixin list-unstyled {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {
+    @content
+  }
+
+  :-moz-placeholder {
+    @content
+  }
+
+  ::-moz-placeholder {
+    @content
+  }
+
+  :-ms-input-placeholder {
+    @content
+  }
+}
+
+@mixin flex() {
+  display: flex;
+}
+
+@mixin inline-flex() {
+  display: inline-flex;
+}
+
+@mixin keyframes($animationName) {
+  @-webkit-keyframes #{$animationName} {
+    @content;
+  }
+
+  @-moz-keyframes #{$animationName} {
+    @content;
+  }
+
+  @-o-keyframes #{$animationName} {
+    @content;
+  }
+
+  @keyframes #{$animationName} {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  animation: #{$str};
+}
+
+@mixin scrollbars($size, $border-radius, $foreground-color, $background-color) {
+
+  // For Google Chrome
+  &::-webkit-scrollbar {
+    width: $size;
+    height: $size;
+    border-radius: $border-radius;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+    border-radius: $border-radius;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: $border-radius;
+  }
+
+  &::-webkit-scrollbar-track-piece:end {
+    background: $background-color;
+    margin-right: 1rem;
+    border-radius: $border-radius;
+  }
+
+  &::-webkit-scrollbar-track-piece:start {
+    background: $background-color;
+    margin-left: 1rem;
+    border-radius: $border-radius;
+  }
+
+  // For Internet Explorer
+  & {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+}
+
+@mixin imgratio {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@mixin contain {
+  object-fit: contain;
+}
+
+@mixin checkbox-favorite {
+  display: inline-block;
+  height: rem(22);
+  width: rem(22);
+  position: absolute;
+  right: 60px;
+  bottom: 20px;
+  padding: 0px;
+  margin: 0px 5px 5px 0px;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  input {
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+    height: rem(22);
+    width: rem(22);
+    margin: 0;
+
+    &:checked~.chk-overlay {
+      display: none;
+    }
+
+    &:checked~.chk-checked-overlay {
+      display: block;
+    }
+  }
+
+  .chk-overlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: rem(22);
+    width: rem(22);
+  }
+
+  .chk-checked-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: rem(22);
+    width: rem(22);
+  }
+}
+
+@mixin product-content {
+  p {
+    font-size: rem(14);
+    line-height: rem(16);
+    font-weight: 700;
+    color: #929BA0;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-size: rem(24);
+    line-height: rem(32);
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+  }
+  span {
+    font-size: rem(16);
+    line-height: rem(20);
+    font-weight: 400;
+    color: #556068;
+  }
+  h4 {
+    font-size: rem(20);
+    line-height: rem(24);
+    font-weight: 700;
+    color: #000;
+    margin-top: rem(10);
+  }
+}
+
+@mixin option-card {
+select {
+  width: 100%;
+  height: rem(50);
+  background: $white;
+  border: 1px solid #EFF0F1;
+  border-radius: rem(12);
+  padding: rem(5) rem(10);
+  margin-top: rem(10);
+  color: #929BA0;
+  font-size: rem(16);
+  line-height: rem(20);
+  font-weight: 400;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border: 1px solid $primary;
+    border-radius: rem(12);
+  }
+}
+}
+
+@mixin submit-card {
+  button {
+    background: $primary;
+    width: 100%;
+    height: rem(50);
+    color: #fff;
+    border-radius: rem(12);
+    font-size: rem(16);
+    line-height: rem(16);
+    font-weight: 700;
+    border: none;
+    margin-top: rem(20);
+    padding: rem(16) rem(20);
+
+    &:hover {
+      background: $tag-primary-color;
+    }
+  }
+}

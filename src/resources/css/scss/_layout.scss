@@ -1,0 +1,10 @@
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0 1rem;
+  position: relative;
+}
+.no-smooth-scroll {
+  scroll-behavior: auto;
+}
+

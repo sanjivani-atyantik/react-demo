@@ -1,0 +1,53 @@
+@import "../../resources/css/scss/variable";
+@import "../../resources/css/scss/mixins";
+.notification {
+	background-color: $notification-primary-bg;
+	color: $notification-color;
+	border-left: .6666rem solid $notification-border-color;
+	padding: 1rem 1.5rem;
+	position: relative;
+	@include transform(translateY(0));
+	@include transition(.15s all linear);
+	opacity: 1;
+}
+.sm-icon {
+	width: 1.416rem;
+	height: 1.41rem;
+	margin-right: .5rem;
+}
+.notificationtitle {
+	color: $primary;
+	margin-bottom: .25rem;
+}
+.notificationdesc {
+	font-weight: 400;
+	letter-spacing: 0.027rem;
+	color: $primary; 
+}
+.notificationlink {
+	font-style: italic;
+}
+.notification-content {
+	display: flex;
+}
+.notification-close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: .75rem;
+	button {
+		width: 1.14rem;
+		height: 1.14rem;
+	}
+	img {
+		max-width: 0.666rem;
+	}
+}
+.notification-text {
+	padding-right: .75rem;
+}
+//animation class
+.slidedown {
+  @include transform(translateY(-1rem));
+  opacity: 0;
+}

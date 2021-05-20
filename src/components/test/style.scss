@@ -1,0 +1,30 @@
+@import "../../resources/css/scss/variable";
+@import "../../resources/css/scss/mixins";
+@import "../../resources/css/scss/functions";
+
+.product-badge {
+    background: #7CCBC1;
+    border-radius: rem(6);
+    color: #fff;
+    font-size: rem(11);
+    line-height: rem(12);
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: rem(8) rem(12);
+}
+
+.product-image {
+    width: 100%;
+}
+
+.product-content {
+    @include product-content;
+}
+
+.option-card {
+    @include option-card;
+}
+
+.submit-card {
+    @include submit-card;
+}

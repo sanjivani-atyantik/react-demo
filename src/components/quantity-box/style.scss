@@ -1,0 +1,24 @@
+@import "../../resources/css/scss/variable";
+@import "../../resources/css/scss/mixins";
+
+.flex-1 {
+    flex: 1;
+    text-align: center;
+}
+.quantity-box {
+    font-family: $font-family2;
+    display: flex;
+    align-items: center;
+    border: .083rem solid rgba($gray-dark,.08);
+    border-radius: .625rem;
+    span,
+    button {
+        font-size: 1.45rem;
+        line-height: 1.75;
+        letter-spacing: .036rem;
+        font-weight: 500;
+    }
+    span {
+        color: $gray-dark;
+    }
+}

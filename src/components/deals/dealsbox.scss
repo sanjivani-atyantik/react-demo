@@ -1,0 +1,132 @@
+@import "../../resources/css/scss/variable";
+@import "../../resources/css/scss/mixins";
+
+.dealsbox {
+  margin-bottom: 2rem;
+
+  .custom-box {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+}
+
+.checkbox-label {
+  position: relative;
+  min-height: 10.833rem;
+  @include shadow(0px -2px 10px rgba(216, 216, 216, 0.5), 0px 2px 10px rgba(216, 216, 216, .5));
+  border-radius: 1.29rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: $white;
+  border-left: .666rem solid $primary;
+  padding: 1rem;
+  cursor: pointer;
+  text-align: left;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem 1rem 0 0;
+    @include transition(.2s all linear);
+  }
+
+  &:before {
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    border: .1666rem solid $primary;
+    background-color: transparent;
+  }
+
+  &:after {
+    border: 0.083rem solid $white;
+    border-top: none;
+    border-right: none;
+    content: "";
+    height: .333rem;
+    position: absolute;
+    @include transform(rotate(-45deg));
+    width: .666rem;
+    right: 0.291rem;
+    top: .375rem;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.deals-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  letter-spacing: .031rem;
+  color: $gray-dark;
+  margin: .5rem 0;
+  padding-right: 1rem;
+}
+
+.dealsbox {
+  input[type="checkbox"] {
+    &:checked {
+      +.checkbox-label {
+        &:before {
+          background-color: $primary;
+        }
+
+        &:after {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+
+    &:disabled {
+      +.checkbox-label {
+        opacity: .4;
+        cursor: not-allowed;
+      }
+    }
+  }
+}
+
+.align-right {
+  text-align: right;
+  width: 100%;
+  margin-top: .5rem;
+}
+
+.dealtag {
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: $font-family2;
+  font-size: .9166rem;
+  line-height: 1.0833rem;
+  letter-spacing: .0523rem;
+  background-color: $primary;
+  color: $white;
+  padding: .417rem .417rem .417rem 1rem;
+  position: relative;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+
+  &:before {
+    content: '';
+    width: 2.6666rem;
+    height: 2.666rem;
+    background-color: $white;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: -.41666rem 0 0 -2.0833rem;
+  }
+}

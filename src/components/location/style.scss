@@ -1,0 +1,48 @@
+@import "../../resources/css/scss/variable";
+@import "../../resources/css/scss/mixins";
+$location-height: 5rem;
+
+.small-title {
+  display: block;
+  margin-bottom: .33rem;
+}
+
+.location-bar {
+  height: $location-height;
+  background-color: $white;
+  border-bottom: 1px solid $light;
+}
+
+.location-row {
+  @include flex;
+  justify-content: space-between;
+  align-items: center;
+  height: $location-height;
+}
+
+.reward-icon {
+  max-width: 1.125rem;
+  vertical-align: middle;
+}
+
+.value {
+  font-family: $font-family3;
+  font-size: $heading3-size;
+  line-height: 1.666rem;
+  color: $primary;
+  font-weight: 500;
+  margin-right: .5rem;
+  vertical-align: middle;
+}
+
+.select-location {
+  flex: 1 1 auto;
+  max-width: calc(100% - 6.25rem);
+}
+
+.reward-section {
+  max-width: 6.25rem;
+  text-align: right;
+}
+
+

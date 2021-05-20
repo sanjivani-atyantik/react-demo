@@ -1,0 +1,39 @@
+@import 'scss/variable';
+//multi item carousel
+:root {
+  --swiper-theme-color: #111111;
+}
+.category-slider {
+  .swiper-slide {
+    width: 28.5%;
+  }
+}
+
+.product-slider {
+  .swiper-slide {
+    width: 39%;
+    padding: .5rem;
+  }
+
+  .swiper-scrollbar {
+    width: 94%;
+    left: 3%;
+  }
+}
+
+.swiper-scrollbar-drag {
+  background: $primary;
+}
+
+.banner-slider {
+  .swiper-slide {
+    height: 20.833rem;
+  }
+}
+.swiper-pagination-bullet {
+  width: .625rem;
+  height: .625rem;
+}
+.swiper-pagination-bullet-active {
+
+}

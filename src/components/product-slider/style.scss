@@ -1,0 +1,50 @@
+@import "../../resources/css/scss/variable";
+@import "../../resources/css/scss/mixins";
+
+.heading-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 1rem 1rem 1rem;
+  align-items: center;
+}
+
+.link {
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+.row {
+  display: flex;
+  overflow-x: auto;
+  padding-top: 2rem;
+  max-width: 100%;
+  position: relative;
+  @include scrollbars(.35rem,.5rem,$primary, $light);
+  scroll-behavior: smooth;
+}
+
+.col {
+  padding: .5rem;
+  min-width: 11.125rem;
+  flex: 0 0 11.125rem;
+  @include transition(.2s all linear);
+}
+
+.reward-icon {
+  max-width: 1.125rem;
+  vertical-align: middle;
+}
+
+.value {
+  font-family: $font-family3;
+  font-size: $heading3-size;
+  line-height: 1.666rem;
+  color: $primary;
+  font-weight: 500;
+  margin-right: .5rem;
+  vertical-align: middle;
+}
+.pad-2 {
+  padding: 2rem 0;
+}

@@ -1,0 +1,20 @@
+@import "../../resources/css/scss/variable";
+@import "../../resources/css/scss/mixins";
+
+.product-img {
+  padding-bottom: 100%;
+  width: 100%;
+  position: relative;
+
+  img {
+    @include imgratio;
+    @include contain;
+    mix-blend-mode: multiply;
+  }
+}
+
+@media(min-width: $md-device) {
+  .product-img {
+    padding-bottom: 35%;
+  }
+}

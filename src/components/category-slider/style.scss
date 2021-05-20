@@ -1,0 +1,35 @@
+@import "../../resources/css/scss/variable";
+@import "../../resources/css/scss/mixins";
+
+.category-name {
+	text-transform: uppercase;
+	color: rgba($gray-dark,.4);
+	letter-spacing: 0.025rem;
+}
+.category-block {
+	display: block;
+	width: 100%;
+	min-width: 9.5rem;
+	text-align: center;
+	padding: .5rem;
+}
+.category-img {
+	width: 7.04166rem;
+	height: 7.04166rem;
+	position: relative;
+	display: block;
+	margin: 0 auto 1rem auto;
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		max-width: 100%;
+		margin: 0 auto;
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+		object-position: center;
+	}
+}
